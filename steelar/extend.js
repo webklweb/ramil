@@ -2,30 +2,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollWrapper = document.querySelector(".scroll-wrapper");
   const scrollContainer = document.querySelector(".scroll-container");
   let animationFrame;
-  const scrollSpeed = 1;
+  const scrollSpeed = 0.3;
+  let scrollPosition = 0;
 
-  // Дублируем контент для бесконечной прокрутки
+  const items = Array.from(scrollContainer.children);
+  const itemCount = items.length;
+
+  if (itemCount < 8) {
+    while (scrollContainer.children.length < 16) {
+      items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        scrollContainer.appendChild(clone);
+      });
+    }
+  } else {
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      scrollContainer.appendChild(clone);
+    });
+  }
+
   scrollContainer.innerHTML += scrollContainer.innerHTML;
 
-  // Функция автоматической прокрутки
   function startAutoScroll() {
     stopAutoScroll();
 
-    let lastScrollTime = 0;
-
-    function step(timestamp) {
-      if (lastScrollTime === 0) lastScrollTime = timestamp;
-      const deltaTime = timestamp - lastScrollTime;
-
-      if (deltaTime > 16) {
-        // Устанавливаем минимальный интервал (для 60fps)
-        scrollWrapper.scrollLeft += scrollSpeed; // Применяем скорость прокрутки
-        lastScrollTime = timestamp;
-      }
+    function step() {
+      scrollPosition += scrollSpeed;
+      scrollWrapper.scrollLeft = Math.floor(scrollPosition);
 
       if (scrollWrapper.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollWrapper.scrollLeft =
-          scrollWrapper.scrollLeft % (scrollContainer.scrollWidth / 2);
+        scrollPosition = 0;
+        scrollWrapper.scrollLeft = 0;
       }
 
       animationFrame = requestAnimationFrame(step);
@@ -42,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   startAutoScroll();
+
+
 
   // Остановка при наведении
   scrollWrapper.addEventListener("mouseenter", stopAutoScroll);
