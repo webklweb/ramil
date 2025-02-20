@@ -1,0 +1,414 @@
+.biaris-main__link span {
+  padding: 0 !important;
+  background-color: unset !important;
+  border-bottom: 5px dotted #fff;
+}
+
+.resource-group-section-with-titles {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.resource-group-section-with-titles .scroll-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  gap: 20px;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.resource-group-section-with-titles .scroll-container {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.resource-group-section-with-titles .bitumen-container {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 16px;
+  background: white;
+}
+
+.resource-group-section-with-titles .bitumen-container:hover {
+  opacity: 0.8;
+}
+
+.resource-group-section-with-titles .bitumen-icon-container {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+.resource-group-section-with-titles .image-container {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: initial;
+  height: 24px;
+  border: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+.resource-group-section-with-titles .bitumen-title-text {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  font: 400 16px/16px Raleway, sans-serif;
+  color: #081e55;
+  letter-spacing: -0.64px;
+}
+
+.biaris-main__subtitle {
+  font-size: 27px;
+  line-height: 140%;
+  letter-spacing: calc(27px * -0.04);
+}
+
+.main__title a:hover span {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .biaris-main__link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main__title.h1 {
+    font-size: 26px !important;
+  }
+
+  .main__title--mobile {
+    display: inline;
+  }
+
+  .main__title--desktop {
+    display: none;
+  }
+
+  .s-main {
+    text-align: left;
+  }
+
+  .biaris-main__subtitle {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: calc(16px * -0.04);
+  }
+
+  .resource-group-section-with-titles {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .resource-group-section-with-titles .bitumen-container {
+    padding: 10px 12px;
+  }
+
+  .resource-group-section-with-titles .bitumen-title-text {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 400 12px/12px Raleway, sans-serif;
+    color: #081e55;
+    letter-spacing: calc(12px * -0.04);
+  }
+
+  .resource-group-section-with-titles .bitumen-icon-container {
+    flex: 0 0 auto;
+    width: 19px;
+    height: 19px;
+  }
+}
+.content-container-with-text-and-image {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 614px;
+  padding: 29px;
+  background: white;
+  margin-top: 30px;
+}
+
+.content-container-with-text-and-image .content-block-with-offer-details {
+  flex: 0 0 auto;
+}
+
+.content-container-with-text-and-image .main-heading-text {
+  font: 600 24px/32px Raleway, sans-serif;
+  color: #081e55;
+  text-align: left;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+
+.content-container-with-text-and-image .vertical {
+  margin-top: 19px;
+}
+
+.content-container-with-text-and-image .image-container {
+  box-sizing: border-box;
+  display: block;
+  width: 399px;
+  max-width: initial;
+  height: 60px;
+  border: none;
+  object-fit: cover;
+}
+
+.content-container-with-text-and-image .consulting-presentation-style {
+  padding: 0;
+  margin: 0;
+  margin-top: 19px;
+  font: 400 16px Raleway, sans-serif;
+  color: #081e55;
+  letter-spacing: -0.64px;
+}
+
+.content-container-with-text-and-image .image-container1 {
+  display: block;
+  width: 230px;
+  max-width: initial;
+  height: 185px;
+  margin-left: 12px;
+  border: none;
+  object-fit: cover;
+}
+
+.biaris-bg-image {
+  position: absolute;
+  right: -822px;
+  bottom: -81px;
+  width: 989px;
+  height: 585px;
+}
+
+.biaris-bg-image img {
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.biaris-bg-image__text {
+  position: absolute;
+  left: 272px;
+  bottom: 81px;
+  background-color: #12285f;
+  padding: 5px 8px;
+  font: 400 14px Raleway, sans-serif;
+  letter-spacing: calc(14px * -0.04);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.biaris-btn {
+  border-bottom: 7px solid #8d0319;
+}
+
+.production-stats-container {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .biaris-btn {
+    font-size: 10px;
+  }
+
+  .s-main {
+    text-align: left;
+  }
+
+  .content-container-with-text-and-image {
+    min-width: unset;
+    padding: 22px 25px;
+    background: white;
+    margin-top: 74px;
+  }
+
+  .content-container-with-text-and-image .content-block-with-offer-details {
+    flex: unset;
+  }
+
+  .content-container-with-text-and-image .main-heading-text {
+    font: 600 15px/20px Raleway, sans-serif;
+    color: #081e55;
+    text-align: left;
+    letter-spacing: -0.6px;
+    margin-bottom: 20px;
+  }
+
+  .content-container-with-text-and-image .main-heading-text br {
+    display: inline;
+  }
+
+  .content-container-with-text-and-image .vertical {
+    margin-top: 19px;
+  }
+
+  .content-container-with-text-and-image .consulting-presentation-style {
+    margin-top: 12px;
+    font: 400 14px Raleway, sans-serif;
+    letter-spacing: -0.56px;
+  }
+
+  .content-container-with-text-and-image .image-container1 {
+    display: none;
+  }
+
+  .biaris-bg-image {
+    position: absolute;
+    right: -242px;
+    bottom: 104px;
+    width: 464px;
+    height: auto;
+  }
+
+  .biaris-bg-image img {
+    object-fit: contain;
+  }
+
+  .biaris-bg-image__text {
+    display: none;
+  }
+
+  .biaris-btn {
+    border-bottom: 7px solid #8d0319;
+  }
+
+  .production-stats-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 6.25px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 14px;
+  }
+
+  .production-stats-container .svg-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    width: 9.5px;
+    height: 16px;
+    color: #ffffff;
+  }
+
+  .production-stats-container .production-quantity-statement {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+
+  .production-stats-container .monthly-production-amount-text {
+    font: 700 14px Raleway, sans-serif;
+    letter-spacing: -0.56px;
+  }
+
+  .production-stats-container .product-description-text {
+    font: 400 14px Raleway, sans-serif;
+    letter-spacing: -0.56px;
+  }
+}
+.biaris-contact-section-with-images {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 132px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0px 4px 50px rgba(25, 30, 43, 0.1);
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.1s, transform 0.3s;
+}
+
+.biaris-contact-section-with-images.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.biaris-contact-section-with-images .contact-info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.biaris-contact-section-with-images .contact-info-section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+
+.biaris-contact-section-with-images .contact-message-style {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 282px;
+  font: 600 13px/15.5px Raleway, sans-serif;
+  color: black;
+  text-align: left;
+  letter-spacing: -0.52px;
+}
+
+.biaris-contact-section-with-images .contact-info-heading {
+  flex: 0 0 auto;
+  font: 600 13px/13px Raleway, sans-serif;
+  color: black;
+  letter-spacing: -0.52px;
+}
+
+.biaris-contact-section-with-images .contact-info-section-2 a:hover {
+  opacity: 0.6;
+}
+
+.biaris-contact-section-with-images .contact-info-section-2 a svg {
+  width: 49px;
+  height: 49px;
+}
+
+@media (max-width: 992px) {
+  .biaris-contact-section-with-images .contact-info-section {
+    justify-content: center;
+  }
+}
